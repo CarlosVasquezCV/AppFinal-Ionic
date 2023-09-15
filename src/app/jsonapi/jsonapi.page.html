@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="volver"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let item of jsonData.detallePokemon">
+    
+
+    <ion-title>
+      {{item.name}}
+    </ion-title>
+    <ion-img src="{{item.imageurl}}"></ion-img>
+      
+    
+
+  </ion-card>
+
+  <ion-card>
+    <ion-title>Hola</ion-title>
+  </ion-card>
+
+
+</ion-content>

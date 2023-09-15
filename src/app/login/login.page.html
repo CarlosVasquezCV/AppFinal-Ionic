@@ -1,0 +1,47 @@
+
+<ion-content>
+  <ion-card class="cuadro-img" >
+    <img src="../../assets/img/Recurso 1.png" class="img">
+  </ion-card>
+
+  <ion-card id="tarjeta-login">
+    <ion-card-header>Login</ion-card-header>
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input [(ngModel)]="usuario" name="usuario" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input [(ngModel)]="contrasena" name="contrasena" type="password"></ion-input>
+  </ion-item>
+  <div id="hola">
+  <button (click)="iniciarSesion()">Iniciar Sesión</button>
+  <button [routerLink]="['/registro']">Registrarse</button>
+  <p> </p>
+  </div>
+</ion-card>
+
+<ion-card class="cuadro-img">
+  <img src="../../assets/img/Recurso 2.png" class="img">
+</ion-card>
+
+</ion-content>
+  
+
+
+<!--
+  <ion-card id="tarjeta-login">
+    <ion-card-header>Login</ion-card-header>
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input [(ngModel)]="usuario" name="usuario" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input [(ngModel)]="contrasena" name="contrasena" type="password"></ion-input>
+  </ion-item>
+  <ion-button (click)="iniciarSesion()">Iniciar Sesión</ion-button>
+  <ion-button [routerLink]="['/registro']">Registrar</ion-button>
+</ion-card>
+
+-->
